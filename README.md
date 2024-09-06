@@ -40,9 +40,22 @@
 Débuggez et testez un SaaS RH
 
 <p></p>
-Tout ce que j’attends de toi pour fiabiliser et améliorer le parcours employé est décrit dans ce document. Il correspond à la description pratique des besoins pour la mise en place de la fonctionnalité. Il faut que tu le lises très attentivement.
+Il faut fiabiliser et améliorer le parcours employé est décrit dans ce <a href="./Documentions-projet/Billed+-+Description+des+fonctionnalités.pdf">document</a>.
 
-Tu y trouveras notamment le rapport avec les bugs identifiés (Kanban Notion) ainsi qu’un exemple de plan de tests End-to-End.
+Il correspond à la description pratique des besoins pour la mise en place de la fonctionnalité. Il faut le lire très attentivement.
+
+Tu y trouveras notamment le <a href="https://openclassrooms.notion.site/a7a612fc166747e78d95aa38106a55ec?v=2a8d3553379c4366b6f66490ab8f0b90">rapport avec les bugs identifiés</a> (Kanban Notion) ainsi qu’un <a href="[text](Documentions-projet/Billed+-+E2E+parcours+administrateur.docx)">exemple</a> de plan de tests End-to-End.
+
+L’essentiel a déjà été développé:
+
+Le back-end des deux parcours est prêt en version alpha.
+
+Côté front-end :
+↳ Parcours administrateur : il a été testé, il faut désormais le débugger.
+
+↳ Parcours employé : il faut entièrement le tester et le débugger.
+
+Chrome Debugger à déjà été utiliser, il faudra continuer avec cet outil.
 
 ## Built with
 
@@ -81,12 +94,12 @@ Tu y trouveras notamment le rapport avec les bugs identifiés (Kanban Notion) ai
 
 ### Frontend Dependencies:
 
-"eslint": "^9.9.1",
-"eslint-plugin-jest": "^28.8.3",
-"express": "^4.17.1",
-"global": "^4.4.0",
-"jquery": "^3.5.1",
-"path": "^0.12.7"
+    "eslint": "^9.9.1",
+    "eslint-plugin-jest": "^28.8.3",
+    "express": "^4.17.1",
+    "global": "^4.4.0",
+    "jquery": "^3.5.1",
+    "path": "^0.12.7"
 
 ## Launching the project
 
@@ -102,15 +115,15 @@ Clone it on your computer.
 
 Acceder au repertoire du projet :
 
-cd Billed-app-FR-Back
+`cd backend`
 
 Installer les dépendances du projet :
 
-npm install
+`npm install`
 
 Lancer l'API :
 
-npm run run:dev
+`npm run run:dev`
 
 Accéder à l'API :
 
@@ -125,31 +138,31 @@ Suivez les indications dans le README du projet backend.
 
 Allez au repo cloné :
 
-$ cd Billed-app-FR-Front
+`cd frontend`
 
 Installez les packages npm (décrits dans package.json) :
 
-$ npm install
+`npm install`
 
 Installez live-server pour lancer un serveur local :
 
-$ npm install -g live-server
+`npm install -g live-server`
 
 Lancez l'application :
 
-$ live-server
+`live-server`
 
 Puis allez à l'adresse : http://127.0.0.1:8080/
 Comment lancer tous les tests en local avec Jest ?
 
-$ npm run test
+`npm run test`
 
 Comment lancer un seul test ?
 
 Installez jest-cli :
 
-$npm i -g jest-cli
-$jest src/**tests**/your_test_file.js
+`npm i -g jest-cli`
+`jest src/**tests**/your_test_file.js`
 
 Comment voir la couverture de test ?
 
@@ -157,49 +170,22 @@ http://127.0.0.1:8080/coverage/lcov-report/
 Comptes et utilisateurs :
 
 Vous pouvez vous connecter en utilisant les comptes:
-administrateur :
 
-utilisateur : admin@test.tld
-mot de passe : admin
+    administrateur :
 
-employé :
+    utilisateur : admin@test.tld
+    mot de passe : admin
 
-utilisateur : employee@test.tld
-mot de passe : employee
+<p></p>
 
-### Available Scripts
+    employé :
 
-In the project backend directory , you can run:
-
-`npm run run:server`
-
-And
-In the project frontend directory , you can run:
-
-`npm run dev`
-
-Runs the app in the development mode.\
-Open [http://localhost:5173](http://localhost:5173) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+    utilisateur : employee@test.tld
+    mot de passe : employee
 
 ## Testez le projet
 
 Github: [https://erik-42.github.io/openclassroom-projet_09-billed/](https://erik-42.github.io/openclassroom-projet_09-billed/)
-
-Comptes et utilisateurs :
-
-Vous pouvez vous connecter en utilisant les comptes:
-administrateur :
-
-utilisateur : admin@test.tld
-mot de passe : admin
-
-employé :
-
-utilisateur : employee@test.tld
-mot de passe : employee
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
