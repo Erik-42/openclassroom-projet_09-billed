@@ -8,7 +8,7 @@
 <div align="center">
   <h1>Billed</h1>
   <a href="https://github.com/Erik-42">
-    <img src="./frontend/src/assets/svg/big_billed.js" alt="Logo ArgentBank" width="300" height="70">
+    <img src="./frontend/src/assets/images/logo/logo-billed.png" alt="Logo Billed" width="300">
   </a>
 </div>
 
@@ -65,7 +65,6 @@ Chrome Debugger à déjà été utiliser, il faudra continuer avec cet outil.
 <a href= https://github.com/Erik-42?tab=repositories&q=&type=&language=sass&sort= > <img width ='32px' height='32px' src ='https://raw.githubusercontent.com/rahulbanerjee26/githubAboutMeGenerator/main/icons/sass.svg'> </a>
 <a href=https://github.com/Erik-42?tab=repositories&q=&type=&language=javascript&sort= > <img width ='32px' height='32px' src ='https://raw.githubusercontent.com/rahulbanerjee26/githubAboutMeGenerator/main/icons/javascript.svg'> </a>
 <a href=https://github.com/Erik-42?tab=repositories&q=&type=&language=reactjs&sort= > <img width ='32px' height='32px' src ='https://raw.githubusercontent.com/rahulbanerjee26/githubAboutMeGenerator/main/icons/reactjs.svg'> </a>
-<a href=https://github.com/Erik-42?tab=repositories&q=&type=&language=redux&sort= > <img width ='32px' height='32px' src ='https://raw.githubusercontent.com/rahulbanerjee26/githubAboutMeGenerator/main/icons/redux.svg'> </a>
 <a href= https://github.com/Erik-42?tab=repositories&q=&type=&language=github&sort= > <img width ='32px' height='32px' src ='https://raw.githubusercontent.com/rahulbanerjee26/githubAboutMeGenerator/main/icons/github.svg'> </a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
