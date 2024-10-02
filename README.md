@@ -8,9 +8,10 @@
 <div align="center">
   <h1>Billed</h1>
   <a href="https://github.com/Erik-42">
-    <img src="./frontend/src/assets/images/logo/logo-billed.png" alt="Logo Billed" width="300">
+    <img src="./frontend/src/assets/images/logo/logo-billed.png" alt="Logo Billed" width="250">
   </a>
 </div>
+<p></p>
 
 <!-- TABLE OF CONTENTS -->
 <details>
@@ -122,7 +123,7 @@ Installer les dépendances du projet :
 
 Lancer l'API :
 
-`npm run run:dev`
+`npm run:dev`
 
 Accéder à l'API :
 
@@ -166,7 +167,8 @@ Installez jest-cli :
 Comment voir la couverture de test ?
 
 http://127.0.0.1:8080/coverage/lcov-report/
-Comptes et utilisateurs :
+
+### Comptes et utilisateurs :
 
 Vous pouvez vous connecter en utilisant les comptes:
 
@@ -185,6 +187,42 @@ Vous pouvez vous connecter en utilisant les comptes:
 ## Testez le projet
 
 Github: [https://erik-42.github.io/openclassroom-projet_09-billed/](https://erik-42.github.io/openclassroom-projet_09-billed/)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## Liste des bugs
+
+### Backend
+
+- 1 Connexions
+
+  - 1.1 La connexion Administrateur ne fonctionne pas.
+
+- 2 Note de frais
+
+  - 2.1 Les justificatifs ne sont pas centré dans la modal.
+  - 2.2 Les champs TVA ne sont pas clairs.
+  - 2.3 Le taux de TVA devrait être une liste avec les différents taux de TVA.
+  - 2.4 Certains justificatif n'apparraissent pas.
+
+- 3 Navigation
+
+  - 3.1 L'enveloppe représente une nouvelle note de frais, ce n'est pas le bon icone.
+  - 3.2 Il n'y a pas de bouton retoursur les pages
+
+- 4 Code
+
+  - 4.1 Incorrect use of `<label for=FORM_ELEMENT><br>`<br>
+    The label's for attribute doesn't match any element id. This might prevent the browser from correctly autofilling the form and accessibility tools from working correctly.
+
+    To fix this issue, make sure the label's for attribute references the correct id of a form field.
+
+### Frontend
+
+- 1
+  - 1.1
+- 2
+  - 2.1
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
