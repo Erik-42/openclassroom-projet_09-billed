@@ -192,37 +192,7 @@ Github: [https://erik-42.github.io/openclassroom-projet_09-billed/](https://erik
 
 ## Liste des bugs
 
-### Backend
-
-- 1 Connexions
-
-  - 1.1 La connexion Administrateur ne fonctionne pas.
-
-- 2 Note de frais
-
-  - 2.1 Les justificatifs ne sont pas centré dans la modal.
-  - 2.2 Les champs TVA ne sont pas clairs.
-  - 2.3 Le taux de TVA devrait être une liste avec les différents taux de TVA.
-  - 2.4 Certains justificatif n'apparraissent pas.
-
-- 3 Navigation
-
-  - 3.1 L'enveloppe représente une nouvelle note de frais, ce n'est pas le bon icone.
-  - 3.2 Il n'y a pas de bouton retoursur les pages
-
-- 4 Code
-
-  - 4.1 Incorrect use of `<label for=FORM_ELEMENT><br>`<br>
-    The label's for attribute doesn't match any element id. This might prevent the browser from correctly autofilling the form and accessibility tools from working correctly.
-
-    To fix this issue, make sure the label's for attribute references the correct id of a form field.
-
-### Frontend
-
-- 1
-  - 1.1
-- 2
-  - 2.1
+### <a href="./Frontend/bugs-list.md">Liste des bugs répertoriés</a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
