@@ -108,578 +108,14 @@ Commande pour lancer les tests :
 npm run test
 ```
 
-> test
-> jest
-
-<br>
-
-FAIL src/**tests**/DashboardFormUI.js
-
-    ● Test suite failed to run
-
-    ● Validation Error:
-
-      Test environment jest-environment-jsdom cannot be found. Make sure the testEnvironment configuration option points to an existing node module.
-
-      Configuration Documentation:
-      https://jestjs.io/docs/configuration
-
-
-    As of Jest 28 "jest-environment-jsdom" is no longer shipped by default, make sure to install it separately.
-
-
-        Test environment jest-environment-jsdom cannot be found. Make sure the testEnvironment configuration option points to an existing node module.
-
-        Configuration Documentation:
-        https://jestjs.io/docs/configuration
-
-      As of Jest 28 "jest-environment-jsdom" is no longer shipped by default, make sure to install it separately.
-
-### Solution
-
-1. ```bash
-   npm install jest-environment-jsdom
-   ```
-
-<br>
-Ajouter dans `jest.config.js`
-
-```javascript
-module.exports = {
-	testEnvironment: "jest-environment-jsdom",
-};
-```
-
-<br>
-
-2. ```bash
-   npm install --legacy-peer-deps
-   ```
-
-3. ```bash
-   npm install jest-html-reporter@latest
-   ```
-
-4. ```bash
-   npm audit fix
-   ```
-
-5. ```bash
-   npm install jest-environment-jsdom
-   ```
-
-<p align="right">(<a href="./README.md">back to Bugs list</a>)</p>
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-FAIL src/**tests**/Login.js
-
-    ● Test suite failed to run
-
-    ● Validation Error:
-
-      Test environment jest-environment-jsdom cannot be found. Make sure the testEnvironment configuration option points to an existing node module.
-
-      Configuration Documentation:
-      https://jestjs.io/docs/configuration
-
-
-    As of Jest 28 "jest-environment-jsdom" is no longer shipped by default, make sure to install it separately.
-
-
-        Test environment jest-environment-jsdom cannot be found. Make sure the testEnvironment configuration option points to an existing node module.
-
-        Configuration Documentation:
-        https://jestjs.io/docs/configuration
-
-      As of Jest 28 "jest-environment-jsdom" is no longer shipped by default, make sure to install it separately.
-
-Solution:
-
-1. ```bash
-   npm install jest-environment-jsdom
-   ```
-
-2.
-
-3.
-
-4.
-
-5.
-
-<p align="right">(<a href="./README.md">back to Bugs list</a>)</p>
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-FAIL src/**tests**/Dashboard.js
-
-    ● Test suite failed to run
-
-    ● Validation Error:
-
-      Test environment jest-environment-jsdom cannot be found. Make sure the testEnvironment configuration option points to an existing node module.
-
-      Configuration Documentation:
-      https://jestjs.io/docs/configuration
-
-
-    As of Jest 28 "jest-environment-jsdom" is no longer shipped by default, make sure to install it separately.
-
-
-        Test environment jest-environment-jsdom cannot be found. Make sure the testEnvironment configuration option points to an existing node module.
-
-        Configuration Documentation:
-        https://jestjs.io/docs/configuration
-
-      As of Jest 28 "jest-environment-jsdom" is no longer shipped by default, make sure to install it separately.
-
-Solution:
-
-1.
-
-2.
-
-3.
-
-4.
-
-5.
-
-<p align="right">(<a href="./README.md">back to Bugs list</a>)</p>
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-FAIL src/**tests**/routes.js
-
-    ● Test suite failed to run
-
-    ● Validation Error:
-
-      Test environment jest-environment-jsdom cannot be found. Make sure the testEnvironment configuration option points to an existing node module.
-
-      Configuration Documentation:
-      https://jestjs.io/docs/configuration
-
-
-    As of Jest 28 "jest-environment-jsdom" is no longer shipped by default, make sure to install it separately.
-
-
-        Test environment jest-environment-jsdom cannot be found. Make sure the testEnvironment configuration option points to an existing node module.
-
-        Configuration Documentation:
-        https://jestjs.io/docs/configuration
-
-      As of Jest 28 "jest-environment-jsdom" is no longer shipped by default, make sure to install it separately.
-
-Solution:
-
-1.
-
-2.
-
-3.
-
-4.
-
-5.
-
-<p align="right">(<a href="./README.md">back to Bugs list</a>)</p>
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-FAIL src/**tests**/Logout.js
-
-    ● Test suite failed to run
-
-    ● Validation Error:
-
-      Test environment jest-environment-jsdom cannot be found. Make sure the testEnvironment configuration option points to an existing node module.
-
-      Configuration Documentation:
-      https://jestjs.io/docs/configuration
-
-
-    As of Jest 28 "jest-environment-jsdom" is no longer shipped by default, make sure to install it separately.
-
-
-        Test environment jest-environment-jsdom cannot be found. Make sure the testEnvironment configuration option points to an existing node module.
-
-        Configuration Documentation:
-        https://jestjs.io/docs/configuration
-
-      As of Jest 28 "jest-environment-jsdom" is no longer shipped by default, make sure to install it separately.
-
-Solution:
-
-1.
-
-2.
-
-3.
-
-4.
-
-5.
-
-<p align="right">(<a href="./README.md">back to Bugs list</a>)</p>
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-FAIL src/**tests**/Bills.js
-
-    ● Test suite failed to run
-
-    ● Validation Error:
-
-      Test environment jest-environment-jsdom cannot be found. Make sure the testEnvironment configuration option points to an existing node module.
-
-      Configuration Documentation:
-      https://jestjs.io/docs/configuration
-
-
-    As of Jest 28 "jest-environment-jsdom" is no longer shipped by default, make sure to install it separately.
-
-
-        Test environment jest-environment-jsdom cannot be found. Make sure the testEnvironment configuration option points to an existing node module.
-
-        Configuration Documentation:
-        https://jestjs.io/docs/configuration
-
-      As of Jest 28 "jest-environment-jsdom" is no longer shipped by default, make sure to install it separately.
-
-Solution:
-
-1.
-
-2.
-
-3.
-
-4.
-
-5.
-
-<p align="right">(<a href="./README.md">back to Bugs list</a>)</p>
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-FAIL src/**tests**/ErrorPage.js
-
-    ● Test suite failed to run
-
-    ● Validation Error:
-
-      Test environment jest-environment-jsdom cannot be found. Make sure the testEnvironment configuration option points to an existing node module.
-
-      Configuration Documentation:
-      https://jestjs.io/docs/configuration
-
-
-    As of Jest 28 "jest-environment-jsdom" is no longer shipped by default, make sure to install it separately.
-
-
-        Test environment jest-environment-jsdom cannot be found. Make sure the testEnvironment configuration option points to an existing node module.
-
-        Configuration Documentation:
-        https://jestjs.io/docs/configuration
-
-      As of Jest 28 "jest-environment-jsdom" is no longer shipped by default, make sure to install it separately.
-
-Solution:
-
-1.
-
-2.
-
-3.
-
-4.
-
-5.
-
-<p align="right">(<a href="./README.md">back to Bugs list</a>)</p>
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-FAIL src/**tests**/Actions.js
-
-    ● Test suite failed to run
-
-    ● Validation Error:
-
-      Test environment jest-environment-jsdom cannot be found. Make sure the testEnvironment configuration option points to an existing node module.
-
-      Configuration Documentation:
-      https://jestjs.io/docs/configuration
-
-
-    As of Jest 28 "jest-environment-jsdom" is no longer shipped by default, make sure to install it separately.
-
-
-        Test environment jest-environment-jsdom cannot be found. Make sure the testEnvironment configuration option points to an existing node module.
-
-        Configuration Documentation:
-        https://jestjs.io/docs/configuration
-
-      As of Jest 28 "jest-environment-jsdom" is no longer shipped by default, make sure to install it separately.
-
-Solution:
-
-1.
-
-2.
-
-3.
-
-4.
-
-5.
-
-<p align="right">(<a href="./README.md">back to Bugs list</a>)</p>
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-FAIL src/**tests**/VerticalLayout.js
-
-    ● Test suite failed to run
-
-    ● Validation Error:
-
-      Test environment jest-environment-jsdom cannot be found. Make sure the testEnvironment configuration option points to an existing node module.
-
-      Configuration Documentation:
-      https://jestjs.io/docs/configuration
-
-
-    As of Jest 28 "jest-environment-jsdom" is no longer shipped by default, make sure to install it separately.
-
-
-        Test environment jest-environment-jsdom cannot be found. Make sure the testEnvironment configuration option points to an existing node module.
-
-        Configuration Documentation:
-        https://jestjs.io/docs/configuration
-
-      As of Jest 28 "jest-environment-jsdom" is no longer shipped by default, make sure to install it separately.
-
-Solution:
-
-1.
-
-2.
-
-3.
-
-4.
-
-5.
-
-<p align="right">(<a href="./README.md">back to Bugs list</a>)</p>
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-FAIL src/**tests**/LoadingPage.js
-
-    ● Test suite failed to run
-
-    ● Validation Error:
-
-      Test environment jest-environment-jsdom cannot be found. Make sure the testEnvironment configuration option points to an existing node module.
-
-      Configuration Documentation:
-      https://jestjs.io/docs/configuration
-
-
-    As of Jest 28 "jest-environment-jsdom" is no longer shipped by default, make sure to install it separately.
-
-
-        Test environment jest-environment-jsdom cannot be found. Make sure the testEnvironment configuration option points to an existing node module.
-
-        Configuration Documentation:
-        https://jestjs.io/docs/configuration
-
-      As of Jest 28 "jest-environment-jsdom" is no longer shipped by default, make sure to install it separately.
-
-Solution:
-
-1.
-
-2.
-
-3.
-
-4.
-
-5.
-
-<p align="right">(<a href="./README.md">back to Bugs list</a>)</p>
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-FAIL src/**tests**/NewBill.js
-
-    ● Test suite failed to run
-
-    ● Validation Error:
-
-      Test environment jest-environment-jsdom cannot be found. Make sure the testEnvironment configuration option points to an existing node module.
-
-      Configuration Documentation:
-      https://jestjs.io/docs/configuration
-
-
-    As of Jest 28 "jest-environment-jsdom" is no longer shipped by default, make sure to install it separately.
-
-
-        Test environment jest-environment-jsdom cannot be found. Make sure the testEnvironment configuration option points to an existing node module.
-
-        Configuration Documentation:
-        https://jestjs.io/docs/configuration
-
-      As of Jest 28 "jest-environment-jsdom" is no longer shipped by default, make sure to install it separately.
-
-Solution:
-
-1.
-
-2.
-
-3.
-
-4.
-
-5.
-
-<p align="right">(<a href="./README.md">back to Bugs list</a>)</p>
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-FAIL src/**tests**/VerticalLayout.js
-
-      ● Test suite failed to run
-
-    TypeError: Cannot read properties of undefined (reading 'html')
-      at new JSDOMEnvironment (node_modules/jest-environment-jsdom/build/index.js:72:44)
-
-Solution:
-
-1.
-
-2.
-
-3.
-
-4.
-
-5.
-
-<p align="right">(<a href="./README.md">back to Bugs list</a>)</p>
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-FAIL src/**tests**/NewBill.js
-● Test suite failed to run
-
-    TypeError: Cannot read properties of undefined (reading 'html')
-
-      at new JSDOMEnvironment (node_modules/jest-environment-jsdom/build/index.js:72:44)
-
-FAIL src/**tests**/routes.js
-● Test suite failed to run
-
-    TypeError: Cannot read properties of undefined (reading 'html')
-
-      at new JSDOMEnvironment (node_modules/jest-environment-jsdom/build/index.js:72:44)
-
-FAIL src/**tests**/Logout.js
-● Test suite failed to run
-
-    TypeError: Cannot read properties of undefined (reading 'html')
-
-      at new JSDOMEnvironment (node_modules/jest-environment-jsdom/build/index.js:72:44)
-
-FAIL src/**tests**/Login.js
-● Test suite failed to run
-
-    TypeError: Cannot read properties of undefined (reading 'html')
-
-      at new JSDOMEnvironment (node_modules/jest-environment-jsdom/build/index.js:72:44)
-
-FAIL src/**tests**/LoadingPage.js
-● Test suite failed to run
-
-    TypeError: Cannot read properties of undefined (reading 'html')
-
-      at new JSDOMEnvironment (node_modules/jest-environment-jsdom/build/index.js:72:44)
-
-FAIL src/**tests**/ErrorPage.js
-● Test suite failed to run
-
-    TypeError: Cannot read properties of undefined (reading 'html')
-
-      at new JSDOMEnvironment (node_modules/jest-environment-jsdom/build/index.js:72:44)
-
-FAIL src/**tests**/DashboardFormUI.js
-● Test suite failed to run
-
-    TypeError: Cannot read properties of undefined (reading 'html')
-
-      at new JSDOMEnvironment (node_modules/jest-environment-jsdom/build/index.js:72:44)
-
-FAIL src/**tests**/Dashboard.js
-● Test suite failed to run
-
-    TypeError: Cannot read properties of undefined (reading 'html')
-
-      at new JSDOMEnvironment (node_modules/jest-environment-jsdom/build/index.js:72:44)
-
-FAIL src/**tests**/Actions.js
-● Test suite failed to run
-
-    TypeError: Cannot read properties of undefined (reading 'html')
-
-      at new JSDOMEnvironment (node_modules/jest-environment-jsdom/build/index.js:72:44)
-
-FAIL src/**tests**/Bills.js
-● Test suite failed to run
-
-    TypeError: Cannot read properties of undefined (reading 'html')
-
-      at new JSDOMEnvironment (node_modules/jest-environment-jsdom/build/index.js:72:44)
-
-Solution:
-
-1.
-
-2.
-
-3.
-
-4.
-
-5.
-
-<p align="right">(<a href="./README.md">back to Bugs list</a>)</p>
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<br>
-
-Test Suites: 11 failed, 11 total
-
-| File      | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s |
-| --------- | ------- | -------- | ------- | ------- | ----------------- |
-| All files | 0       | 0        | 0       | 0       |
-| All files | 0       | 0        | 0       | 0       |
-| All files | 0       | 0        | 0       | 0       |
-| All files | 0       | 0        | 0       | 0       |
-| All files | 0       | 0        | 0       | 0       |
-
-<br>
-
-Test Suites: 11 failed, 11 total
-
-> Tests: 0 total
->
-> Snapshots: 0 total
->
-> Time: 7.422 s
->
-> Ran all test suites.
-
 <p align="right">(<a href="./README.md">back to Bugs list</a>)</p>
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 1ere erreur
 
 les dates sont dans un format anglo-saxon et mal trié il faut les convertire en format international et les trié dans l'ordre croissant
+
+solution:
 
 ```js
 const rows = (data) => {
@@ -720,3 +156,76 @@ const rows = (data) => {
 ```
 
 L'erreur vient de employee-password-input au lieu de admmin-password-input
+
+3eme erreur
+
+Je suis connecté en tant qu'employé, je saisis une note de frais avec un justificatif qui a une extension différente de jpg, jpeg ou png, j'envoie. J'arrive sur la page Bills, je clique sur l'icône "voir" pour consulter le justificatif : la modale s'ouvre, mais il n'y a pas d'image.
+
+Si je me connecte à présent en tant qu'Admin, et que je clique sur le ticket correspondant, le nom du fichier affiché est null. De même, lorsque je clique sur l'icône "voir" pour consulter le justificatif : la modale s'ouvre, mais il n'y a pas d'image.
+
+solution:
+
+```js
+// Vérification de l'extension du fichier
+const allowedExtensions = ["jpg", "jpeg", "png"];
+const fileExtension = fileName.split(".").pop();
+
+if (!allowedExtensions.includes(fileExtension.toLowerCase())) {
+	alert("Seuls les fichiers JPG, JPEG et PNG sont autorisés.");
+	this.document.querySelector(`input[data-testid="file"]`).value = ""; // Réinitialise l'input file
+	return;
+}
+```
+
+4eme erreur
+
+Je suis connecté en tant qu'administrateur RH, je déplie une liste de tickets (par exemple : statut "validé"), je sélectionne un ticket, puis je déplie une seconde liste (par exemple : statut "refusé"), je ne peux plus sélectionner un ticket de la première liste.
+
+Comportement attendu : pourvoir déplier plusieurs listes, et consulter les tickets de chacune des deux listes.
+
+Pas besoin d'ajouter de tests.
+
+solution:
+
+dans le 'constructor'
+
+```js
+this.activeLists = {};
+```
+
+dans 'handleEditTicket'
+
+```js
+if (this.activeBillId !== bill.id) {
+	this.activeBillId = bill.id;
+	$(".dashboard-right-container div").html(DashboardFormUI(bill));
+	$(".vertical-navbar").css({ height: "150vh" });
+} else {
+	this.activeBillId = null;
+	$(".dashboard-right-container div").html(
+		`<div id="big-billed-icon" data-testid="big-billed-icon">${BigBilledIcon}</div>`
+	);
+	$(".vertical-navbar").css({ height: "120vh" });
+}
+```
+
+dans 'handleShowTicket'
+
+```js
+const isListOpen = this.activeLists[index] || false;
+
+if (!isListOpen) {
+	$(`#arrow-icon${index}`).css({ transform: "rotate(0deg)" });
+	$(`#status-bills-container${index}`).html(
+		cards(filteredBills(bills, getStatus(index)))
+	);
+	this.activeLists[index] = true;
+} else {
+	$(`#arrow-icon${this.index}`).css({ transform: "rotate(90deg)" });
+	$(`#status-bills-container${this.index}`).html("");
+	this.activeLists[index] = false;
+}
+```
+
+Listes indépendantes : j'ai remplacé l' approche this.counter et this.index par this.activeLists pour suivre quelles listes sont ouvertes ou fermées individuellement.
+Listes multiples : Chaque liste peut désormais être ouverte ou fermée indépendamment, sans affecter les autres.
