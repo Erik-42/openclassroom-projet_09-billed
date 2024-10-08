@@ -1,0 +1,296 @@
+[
+  {
+    "name": "app",
+    "type": "directory",
+    "children": [
+      {
+        "name": "datepicker.js",
+        "type": "file"
+      },
+      {
+        "name": "format.js",
+        "type": "file"
+      },
+      {
+        "name": "Router.js",
+        "type": "file"
+      },
+      {
+        "name": "Store.js",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": "assets",
+    "type": "directory",
+    "children": [
+      {
+        "name": "images",
+        "type": "directory",
+        "children": [
+          {
+            "name": "facturefreemobile.jpg",
+            "type": "file"
+          }
+        ]
+      },
+      {
+        "name": "svg",
+        "type": "directory",
+        "children": [
+          {
+            "name": "arrow.js",
+            "type": "file"
+          },
+          {
+            "name": "big_billed.js",
+            "type": "file"
+          },
+          {
+            "name": "calendar.js",
+            "type": "file"
+          },
+          {
+            "name": "disconnect.js",
+            "type": "file"
+          },
+          {
+            "name": "download_blue.js",
+            "type": "file"
+          },
+          {
+            "name": "download_white.js",
+            "type": "file"
+          },
+          {
+            "name": "euro.js",
+            "type": "file"
+          },
+          {
+            "name": "eye_blue.js",
+            "type": "file"
+          },
+          {
+            "name": "eye_white.js",
+            "type": "file"
+          },
+          {
+            "name": "mail.js",
+            "type": "file"
+          },
+          {
+            "name": "pct.js",
+            "type": "file"
+          },
+          {
+            "name": "window.js",
+            "type": "file"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "constants",
+    "type": "directory",
+    "children": [
+      {
+        "name": "routes.js",
+        "type": "file"
+      },
+      {
+        "name": "usersTest.js",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": "containers",
+    "type": "directory",
+    "children": [
+      {
+        "name": "Bills.js",
+        "type": "file"
+      },
+      {
+        "name": "Dashboard.js",
+        "type": "file"
+      },
+      {
+        "name": "Login.js",
+        "type": "file"
+      },
+      {
+        "name": "Logout.js",
+        "type": "file"
+      },
+      {
+        "name": "NewBill.js",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": "css",
+    "type": "directory",
+    "children": [
+      {
+        "name": "actions.css",
+        "type": "file"
+      },
+      {
+        "name": "bills.css",
+        "type": "file"
+      },
+      {
+        "name": "dashboard.css",
+        "type": "file"
+      },
+      {
+        "name": "dashboardForm.css",
+        "type": "file"
+      },
+      {
+        "name": "datepicker.css",
+        "type": "file"
+      },
+      {
+        "name": "layout.css",
+        "type": "file"
+      },
+      {
+        "name": "loading.css",
+        "type": "file"
+      },
+      {
+        "name": "login.css",
+        "type": "file"
+      },
+      {
+        "name": "newbill.css",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": "export-file-structure.js",
+    "type": "file"
+  },
+  {
+    "name": "fixtures",
+    "type": "directory",
+    "children": [
+      {
+        "name": "bills.js",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": "views",
+    "type": "directory",
+    "children": [
+      {
+        "name": "Actions.js",
+        "type": "file"
+      },
+      {
+        "name": "BillsUI.js",
+        "type": "file"
+      },
+      {
+        "name": "DashboardFormUI.js",
+        "type": "file"
+      },
+      {
+        "name": "DashboardUI.js",
+        "type": "file"
+      },
+      {
+        "name": "ErrorPage.js",
+        "type": "file"
+      },
+      {
+        "name": "LoadingPage.js",
+        "type": "file"
+      },
+      {
+        "name": "LoginUI.js",
+        "type": "file"
+      },
+      {
+        "name": "NewBillUI.js",
+        "type": "file"
+      },
+      {
+        "name": "VerticalLayout.js",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": "__mocks__",
+    "type": "directory",
+    "children": [
+      {
+        "name": "localStorage.js",
+        "type": "file"
+      },
+      {
+        "name": "store.js",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": "__tests__",
+    "type": "directory",
+    "children": [
+      {
+        "name": "Actions.js",
+        "type": "file"
+      },
+      {
+        "name": "Bills.js",
+        "type": "file"
+      },
+      {
+        "name": "Dashboard.js",
+        "type": "file"
+      },
+      {
+        "name": "DashboardFormUI.js",
+        "type": "file"
+      },
+      {
+        "name": "ErrorPage.js",
+        "type": "file"
+      },
+      {
+        "name": "LoadingPage.js",
+        "type": "file"
+      },
+      {
+        "name": "Login.js",
+        "type": "file"
+      },
+      {
+        "name": "Logout.js",
+        "type": "file"
+      },
+      {
+        "name": "NewBill.js",
+        "type": "file"
+      },
+      {
+        "name": "routes.js",
+        "type": "file"
+      },
+      {
+        "name": "VerticalLayout.js",
+        "type": "file"
+      }
+    ]
+  }
+]

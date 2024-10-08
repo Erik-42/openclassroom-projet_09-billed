@@ -6,17 +6,61 @@
 
 ### Liste de bugs répertoriés par mes soins
 
+## Mise en place
+
+- 1 Commande de lancement du serveur Backend érronée:
+
+      npm run run:dev
+
+  au lieu de
+
+      npm run dev
+
+- 2
+
+  ```bash
+  npm install jest-environment-jsdom
+  ```
+
+  dans le fichier `jest.config.js`
+
+```js
+const config = {
+	testEnvironment: "jest-environment-jsdom",
+};
+```
+
+- 2.1
+
+```bash
+npm audit fix --force
+```
+
+- 2.2
+  fix available via `npm audit fix --force`
+
+Will install express@2.5.11, which is a breaking change
+node_modules/cookie
+express >=3.0.0-alpha1
+Depends on vulnerable versions of cookie
+node_modules/express
+
+4 vulnerabilities (1 moderate, 3 high)
+
+- 2.3
+  To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+fix available via `npm audit fix --force`
+Will install express@2.5.11, which is a breaking change
+node_modules/cookie
+express >=3.0.0-alpha1
+Depends on vulnerable versions of cookie
+node_modules/express
+
+2 low severity vulnerabilities
+
 ## Backend
-
-- 0 Mise en place
-
-  - 0.1 Commande de lancement du serveur Backend érronée:
-
-        npm run run:dev
-
-    au lieu de
-
-        npm run:dev
 
 <br>
 
@@ -91,11 +135,11 @@ FAIL src/**tests**/DashboardFormUI.js
 
       As of Jest 28 "jest-environment-jsdom" is no longer shipped by default, make sure to install it separately.
 
-### Solution:
+### Solution
 
-1.  ```bash
-    npm install jest-environment-jsdom
-    ```
+1. ```bash
+   npm install jest-environment-jsdom
+   ```
 
 <br>
 Ajouter dans `jest.config.js`
@@ -108,21 +152,21 @@ module.exports = {
 
 <br>
 
-2.  ```bash
-    npm install --legacy-peer-deps
-    ```
+2. ```bash
+   npm install --legacy-peer-deps
+   ```
 
-3.  ```bash
-    npm install jest-html-reporter@latest
-    ```
+3. ```bash
+   npm install jest-html-reporter@latest
+   ```
 
-4.  ```bash
-    npm audit fix
-    ```
+4. ```bash
+   npm audit fix
+   ```
 
-5.  ```bash
-    npm install jest-environment-jsdom
-    ```
+5. ```bash
+   npm install jest-environment-jsdom
+   ```
 
 <p align="right">(<a href="./README.md">back to Bugs list</a>)</p>
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -151,9 +195,9 @@ FAIL src/**tests**/Login.js
 
 Solution:
 
-1.  ```bash
-
-    ```
+1. ```bash
+   npm install jest-environment-jsdom
+   ```
 
 2.
 
@@ -499,16 +543,124 @@ Solution:
 <p align="right">(<a href="./README.md">back to Bugs list</a>)</p>
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+FAIL src/**tests**/VerticalLayout.js
+
+      ● Test suite failed to run
+
+    TypeError: Cannot read properties of undefined (reading 'html')
+      at new JSDOMEnvironment (node_modules/jest-environment-jsdom/build/index.js:72:44)
+
+Solution:
+
+1.
+
+2.
+
+3.
+
+4.
+
+5.
+
+<p align="right">(<a href="./README.md">back to Bugs list</a>)</p>
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+FAIL src/**tests**/NewBill.js
+● Test suite failed to run
+
+    TypeError: Cannot read properties of undefined (reading 'html')
+
+      at new JSDOMEnvironment (node_modules/jest-environment-jsdom/build/index.js:72:44)
+
+FAIL src/**tests**/routes.js
+● Test suite failed to run
+
+    TypeError: Cannot read properties of undefined (reading 'html')
+
+      at new JSDOMEnvironment (node_modules/jest-environment-jsdom/build/index.js:72:44)
+
+FAIL src/**tests**/Logout.js
+● Test suite failed to run
+
+    TypeError: Cannot read properties of undefined (reading 'html')
+
+      at new JSDOMEnvironment (node_modules/jest-environment-jsdom/build/index.js:72:44)
+
+FAIL src/**tests**/Login.js
+● Test suite failed to run
+
+    TypeError: Cannot read properties of undefined (reading 'html')
+
+      at new JSDOMEnvironment (node_modules/jest-environment-jsdom/build/index.js:72:44)
+
+FAIL src/**tests**/LoadingPage.js
+● Test suite failed to run
+
+    TypeError: Cannot read properties of undefined (reading 'html')
+
+      at new JSDOMEnvironment (node_modules/jest-environment-jsdom/build/index.js:72:44)
+
+FAIL src/**tests**/ErrorPage.js
+● Test suite failed to run
+
+    TypeError: Cannot read properties of undefined (reading 'html')
+
+      at new JSDOMEnvironment (node_modules/jest-environment-jsdom/build/index.js:72:44)
+
+FAIL src/**tests**/DashboardFormUI.js
+● Test suite failed to run
+
+    TypeError: Cannot read properties of undefined (reading 'html')
+
+      at new JSDOMEnvironment (node_modules/jest-environment-jsdom/build/index.js:72:44)
+
+FAIL src/**tests**/Dashboard.js
+● Test suite failed to run
+
+    TypeError: Cannot read properties of undefined (reading 'html')
+
+      at new JSDOMEnvironment (node_modules/jest-environment-jsdom/build/index.js:72:44)
+
+FAIL src/**tests**/Actions.js
+● Test suite failed to run
+
+    TypeError: Cannot read properties of undefined (reading 'html')
+
+      at new JSDOMEnvironment (node_modules/jest-environment-jsdom/build/index.js:72:44)
+
+FAIL src/**tests**/Bills.js
+● Test suite failed to run
+
+    TypeError: Cannot read properties of undefined (reading 'html')
+
+      at new JSDOMEnvironment (node_modules/jest-environment-jsdom/build/index.js:72:44)
+
+Solution:
+
+1.
+
+2.
+
+3.
+
+4.
+
+5.
+
+<p align="right">(<a href="./README.md">back to Bugs list</a>)</p>
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 <br>
 
 Test Suites: 11 failed, 11 total
-File | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s
-----------|---------|----------|---------|---------|-------------------
-| All files | 0 | 0 | 0 | 0 |
-| All files | 0 | 0 | 0 | 0 |
-| All files | 0 | 0 | 0 | 0 |
-| All files | 0 | 0 | 0 | 0 |
-| All files | 0 | 0 | 0 | 0 |
+
+| File      | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s |
+| --------- | ------- | -------- | ------- | ------- | ----------------- |
+| All files | 0       | 0        | 0       | 0       |
+| All files | 0       | 0        | 0       | 0       |
+| All files | 0       | 0        | 0       | 0       |
+| All files | 0       | 0        | 0       | 0       |
+| All files | 0       | 0        | 0       | 0       |
 
 <br>
 
@@ -524,3 +676,47 @@ Test Suites: 11 failed, 11 total
 
 <p align="right">(<a href="./README.md">back to Bugs list</a>)</p>
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+1ere erreur
+
+les dates sont dans un format anglo-saxon et mal trié il faut les convertire en format international et les trié dans l'ordre croissant
+
+```js
+const rows = (data) => {
+	if (data && data.length) {
+		data.sort((a, b) => {
+			const dateA = new Date(
+				a.date.split("-")[0],
+				parseInt(a.date.split("-")[1]) - 1,
+				a.date.split("-")[2]
+			);
+			const dateB = new Date(
+				b.date.split("-")[0],
+				parseInt(b.date.split("-")[1]) - 1,
+				b.date.split("-")[2]
+			);
+			return dateB - dateA;
+		});
+		return data.map((bill) => row(bill)).join("");
+	}
+	return "";
+};
+```
+
+2eme erreur
+
+```js
+ ● Given that I am a user on login page › When I do fill fields in correct format and I click on admin button Login In › Then I should be identified as an HR admin in app
+
+    TypeError: Cannot read properties of null (reading 'value')
+
+      42 |     const user = {
+      43 |       type: "Admin",
+    > 44 |       email: e.target.querySelector(`input[data-testid="employee-email-input"]`).value,
+         |              ^
+      45 |       password: e.target.querySelector(`input[data-testid="employee-password-input"]`).value,
+      46 |       status: "connected"
+      47 |     }
+```
+
+L'erreur vient de employee-password-input au lieu de admmin-password-input

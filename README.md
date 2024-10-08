@@ -123,7 +123,7 @@ Installer les dépendances du projet :
 
 Lancer l'API :
 
-`npm run:dev`
+`npm run dev`
 
 Accéder à l'API :
 
