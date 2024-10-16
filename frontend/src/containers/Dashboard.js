@@ -6,9 +6,6 @@ import USERS_TEST from "../constants/usersTest.js";
 import Logout from "./Logout.js";
 
 export const filteredBills = (data, status) => {
-	console.log("Data received for filtering:", data);
-	console.log("Filter status:", status);
-
 	return data && data.length
 		? data.filter((bill) => {
 				let selectCondition;
@@ -25,8 +22,6 @@ export const filteredBills = (data, status) => {
 						![...USERS_TEST, userEmail].includes(bill.email);
 				}
 
-				console.log("Bill filter condition:", selectCondition, bill);
-
 				return selectCondition;
 		  })
 		: [];
@@ -40,8 +35,6 @@ export const card = (bill) => {
 	const lastName = firstAndLastNames.includes(".")
 		? firstAndLastNames.split(".")[1]
 		: firstAndLastNames;
-
-	console.log("Formatted name:", firstName, lastName);
 
 	return `
     <div class='bill-card' id='open-bill${bill.id}' data-testid='open-bill${
@@ -64,8 +57,6 @@ export const card = (bill) => {
 };
 
 export const cards = (bills) => {
-	console.log("Generating cards for bills:", bills);
-
 	return bills && bills.length ? bills.map((bill) => card(bill)).join("") : "";
 };
 
@@ -104,6 +95,7 @@ export default class {
 	};
 
 	handleEditTicket(e, bill, bills) {
+		console.log("editTicket");
 		if (this.counter === undefined || this.id !== bill.id) this.counter = 0;
 		if (this.id === undefined || this.id !== bill.id) this.id = bill.id;
 		if (this.counter % 2 === 0) {
@@ -164,6 +156,7 @@ export default class {
 		}
 
 		bills.forEach((bill) => {
+			$(`#open-bill${bill.id}`).off();
 			$(`#open-bill${bill.id}`).click((e) =>
 				this.handleEditTicket(e, bill, bills)
 			);
@@ -187,8 +180,6 @@ export default class {
 					return bills;
 				})
 				.catch((error) => {
-					console.error("Error fetching bills:", error);
-
 					throw error;
 				});
 		}
