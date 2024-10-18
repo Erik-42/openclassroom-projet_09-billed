@@ -208,12 +208,12 @@ Comportement attendu : pourvoir déplier plusieurs listes, et consulter les tick
 
 ### solution:
 
+```js
 bills.forEach((bill) => {
-$(`#open-bill${bill.id}`).off();
-			$(`#open-bill${bill.id}`).click((e) =>
-this.handleEditTicket(e, bill, bills)
-);
+	$(`#open-bill${bill.id}`).off();
+	$(`#open-bill${bill.id}`).click((e) => this.handleEditTicket(e, bill, bills));
 });
+```
 
 - dans le `constructor`
 
