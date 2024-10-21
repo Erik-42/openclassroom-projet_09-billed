@@ -80,7 +80,7 @@ node_modules/express
 - 2 Navigation
 
   - 2.1 L'enveloppe représente une nouvelle note de frais, ce n'est pas le bon icone.
-  - 2.2 Il n'y a pas de bouton retoursur les pages
+  - 2.2 Il n'y a pas de bouton retour sur les pages
 
 - 3 Code
 
