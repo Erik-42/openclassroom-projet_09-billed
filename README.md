@@ -66,6 +66,7 @@ Chrome Debugger à déjà été utiliser, il faudra continuer avec cet outil.
 <a href= https://github.com/Erik-42?tab=repositories&q=&type=&language=sass&sort= > <img width ='32px' height='32px' src ='https://raw.githubusercontent.com/rahulbanerjee26/githubAboutMeGenerator/main/icons/sass.svg'> </a>
 <a href=https://github.com/Erik-42?tab=repositories&q=&type=&language=javascript&sort= > <img width ='32px' height='32px' src ='https://raw.githubusercontent.com/rahulbanerjee26/githubAboutMeGenerator/main/icons/javascript.svg'> </a>
 <a href=https://github.com/Erik-42?tab=repositories&q=&type=&language=reactjs&sort= > <img width ='32px' height='32px' src ='https://raw.githubusercontent.com/rahulbanerjee26/githubAboutMeGenerator/main/icons/reactjs.svg'> </a>
+<a href=https://github.com/Erik-42?tab=repositories&q=&type=&language=reactjs&sort= > <img width ='32px' height='32px' src ='https://raw.githubusercontent.com/rahulbanerjee26/githubAboutMeGenerator/main/icons/jest.svg'> </a>
 <a href= https://github.com/Erik-42?tab=repositories&q=&type=&language=github&sort= > <img width ='32px' height='32px' src ='https://raw.githubusercontent.com/rahulbanerjee26/githubAboutMeGenerator/main/icons/github.svg'> </a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -73,7 +74,6 @@ Chrome Debugger à déjà été utiliser, il faudra continuer avec cet outil.
 ## Installation:
 
 <div>
-<a href=https://nodejs.org>NodeJS</a> & <a href=https://github.com/coreybutler/nvm-windows>NVM</a>
 </div>
 <div>
 <a href=https://npmjs.com>Npm</a>
@@ -94,8 +94,6 @@ Chrome Debugger à déjà été utiliser, il faudra continuer avec cet outil.
 
 ### Frontend Dependencies:
 
-    "eslint": "^9.9.1",
-    "eslint-plugin-jest": "^28.8.3",
     "express": "^4.17.1",
     "global": "^4.4.0",
     "jquery": "^3.5.1",
