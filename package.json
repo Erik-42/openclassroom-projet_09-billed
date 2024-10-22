@@ -1,5 +1,8 @@
 {
   "dependencies": {
     "nvm": "^0.0.4"
+  },
+  "devDependencies": {
+    "commitizen": "^4.3.1"
   }
 }
