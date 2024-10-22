@@ -215,61 +215,31 @@ bills.forEach((bill) => {
 });
 ```
 
-- dans le `constructor`
-
-```js
-this.activeLists = {};
-```
-
-- dans `handleEditTicket`
-
-```js
-if (this.activeBillId !== bill.id) {
-	this.activeBillId = bill.id;
-	$(".dashboard-right-container div").html(DashboardFormUI(bill));
-	$(".vertical-navbar").css({ height: "150vh" });
-} else {
-	this.activeBillId = null;
-	$(".dashboard-right-container div").html(
-		`<div id="big-billed-icon" data-testid="big-billed-icon">${BigBilledIcon}</div>`
-	);
-	$(".vertical-navbar").css({ height: "120vh" });
-}
-```
-
-- dans `handleShowTicket`
-
-```js
-const isListOpen = this.activeLists[index] || false;
-
-// Si la liste est fermée, on l'ouvre
-if (!isListOpen) {
-	$(`#arrow-icon${index}`).css({ transform: "rotate(0deg)" });
-	const filteredTickets = filteredBills(bills, getStatus(index));
-	$(`#status-bills-container${index}`).html(cards(filteredTickets));
-	this.activeLists[index] = true;
-}
-// Si la liste est ouverte, on la ferme
-else {
-	$(`#arrow-icon${index}`).css({ transform: "rotate(90deg)" });
-	$(`#status-bills-container${index}`).html(""); //on vide la liste
-	this.activeLists[index] = false;
-}
-
-// Ajoute des événements clic sur les factures affichées uniquement si la liste est ouverte
-if (this.activeLists[index]) {
-	bills.forEach((bill) => {
-		$(`#open-bill${bill.id}`).click((e) =>
-			this.handleEditTicket(e, bill, bills)
-		);
-	});
-}
-```
-
-- Listes indépendantes : j'ai remplacé l' approche this.counter et this.index par this.activeLists pour suivre quelles listes sont ouvertes ou fermées individuellement.
-
-- Listes multiples : Chaque liste peut désormais être ouverte ou fermée indépendamment, sans affecter les autres.
   <br>
+  
+Voici une explication détaillée des éléments de ce code :
+  <br>
+
+```js
+bills.forEach((bill) => { ... })
+```
+
+La méthode forEach() est une fonction intégrée de JavaScript qui exécute une fonction de rappel pour chaque élément d'un tableau. Dans ce cas, elle parcourt le tableau bills, et pour chaque élément (une facture), elle exécute la fonction fléchée qui suit.
+<br>
+
+```js
+$(#open-bill${bill.id}).off();
+```
+
+Cette ligne utilise jQuery pour sélectionner un élément du DOM qui a un ID correspondant à open-bill suivi de l'ID de la facture (bill.id). La méthode .off() désactive tous les gestionnaires d'événements précédemment attachés à cet élément. Cela permet d'éviter que plusieurs gestionnaires d'événements ne soient attachés à la même facture, ce qui pourrait entraîner des comportements indésirables lors de clics successifs.
+<br>
+
+```js
+$(#open-bill${bill.id}).click((e) => { ... });
+```
+
+Cette ligne réattache un gestionnaire d'événements click à l'élément sélectionné. Lorsque l'utilisateur clique sur l'élément, la fonction fléchée est exécutée.
+<br>
 
 ## Tests unitaires et d'intégration
 

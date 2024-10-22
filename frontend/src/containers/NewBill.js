@@ -28,11 +28,11 @@ export default class NewBill {
 		const allowedExtensions = ["jpg", "jpeg", "png"];
 		const fileExtension = fileName.split(".").pop();
 
-		if (!allowedExtensions.includes(fileExtension.toLowerCase())) {
-			alert("Seuls les fichiers JPG, JPEG et PNG sont autorisés.");
-			this.document.querySelector(`input[data-testid="file"]`).value = ""; // Réinitialise l'input file
-			return;
-		}
+		// if (!allowedExtensions.includes(fileExtension.toLowerCase())) {
+		// 	alert("Seuls les fichiers JPG, JPEG et PNG sont autorisés.");
+		// 	this.document.querySelector(`input[data-testid="file"]`).value = null; // Réinitialise l'input file
+		// 	return;
+		// }
 
 		const formData = new FormData();
 		const email = JSON.parse(localStorage.getItem("user")).email;
