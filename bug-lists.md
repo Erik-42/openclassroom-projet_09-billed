@@ -217,7 +217,7 @@ bills.forEach((bill) => {
 
   <br>
   
-Voici une explication détaillée des éléments de ce code :
+Explication détaillée des éléments de ce code :
   <br>
 
 ```js
@@ -256,15 +256,27 @@ Le rapport de couverture de branche de Jest indique que les fichiers suivants ne
 - [x] ~~composant views/NewBill~~
 - [ ] composant container/Bills :
 
+  ### Solution:
+
   - [ ] couvrir un maximum de "statements" c'est simple, il faut qu’après avoir ajouté tes tests unitaires et d’intégration <a href='http://127.0.0.1:8080/coverage/lcov-report/containers/Bills.js.html'> le rapport de couverture du fichier `container/Bills`</a> soit vert. Cela devrait permettre d'obtenir un taux de couverture aux alentours de 80% dans la colonne "statements".
+
+  ### Solution:
 
   - [ ] ajouter un test d'intégration `GET` Bills. Tu peux t'inspirer de celui qui est fait (signalé en commentaires) pour Dashboard.
 
+  ### Solution:
+
 - [ ] composant `container/NewBill` :
+
+  ### Solution:
 
   - [ ] couvrir un maximum de "statements" : c'est simple, il faut que le rapport de couverture du fichier `container/NewBill` soit vert (accessible à <a href='http://127.0.0.1:8080/coverage/lcov-report/containers/NewBill.js.html'> cette adresse</a> quand tu auras lancé le serveur). Cela devrait permettre d'obtenir un taux de couverture aux alentours de 80% dans la colonne "statements".
 
+  ### Solution:
+
   - [ ] ajouter un test d'intégration `POST` new bill.
+
+  ### Solution:
 
 - [x] ~~composant views/VerticalLayout~~
 

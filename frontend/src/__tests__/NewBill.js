@@ -137,20 +137,6 @@ describe("Given I am connected as an employee", () => {
 				expect(handleSubmit).toHaveBeenCalled(); // Vérifie que la fonction handleSubmit a bien été appelée lors de la soumission
 			});
 		});
-
-		// // Test pour vérifier que les erreurs sont bien gérées
-		// test("Then it should handle errors correctly", async () => {
-		// 	const mockError = new Error("An error occurred");
-		// 	mockStore.bills().create.mockRejectedValueOnce(mockError); // Simule une erreur à l'appel de `create`
-		// 	jest.spyOn(console, "error").mockImplementation(() => {}); // Espionne la fonction console.error
-		// 	const form = screen.getByTestId("form-new-bill");
-		// 	const handleSubmit = jest.fn((e) => newbillContainer.handleSubmit(e));
-		// 	form.addEventListener("submit", handleSubmit);
-		// 	userEvent.submit(form); // Soumission du formulaire
-		// 	await waitFor(() => {
-		// 		expect(console.error).toHaveBeenCalledWith(mockError); // Vérifie que l'erreur est bien loguée dans la console
-		// 	});
-		// });
 	});
 
 	// Test pour la gestion des erreurs API
