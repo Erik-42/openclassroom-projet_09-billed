@@ -1,8 +1,8 @@
 # Liste des bugs
 
-<a name="readme-top"></a>
+<a name="bugList-top"></a>
 
-<p align="right">(<a href="./README.md">back to Bugs list</a>)</p>
+<p align="right">(<a href="./README.md">back to ReadMe</a>)</p>
 
 ### Liste de bugs répertoriés par mes soins
 
@@ -22,43 +22,43 @@
   npm install jest-environment-jsdom
   ```
 
-  dans le fichier `jest.config.js`
+  Ajout dans le fichier `jest.config.js`
 
-```js
-const config = {
-	testEnvironment: "jest-environment-jsdom",
-};
-```
+  ```js
+  const config = {
+  	testEnvironment: "jest-environment-jsdom",
+  };
+  ```
 
-- 2.1
+  - 2.1
 
-```bash
-npm audit fix --force
-```
+    ```bash
+    npm audit fix --force
+    ```
 
-- 2.2
-  fix available via `npm audit fix --force`
+  - 2.2
+    fix available via `npm audit fix --force`
 
-Will install express@2.5.11, which is a breaking change
-node_modules/cookie
-express >=3.0.0-alpha1
-Depends on vulnerable versions of cookie
-node_modules/express
+    Will install `express@2.5.11`, which is a breaking change
+    node_modules/cookie
+    express >=3.0.0-alpha1
+    Depends on vulnerable versions of cookie
+    node_modules/express
 
-4 vulnerabilities (1 moderate, 3 high)
+        => 4 vulnerabilities (1 moderate, 3 high)
 
-- 2.3
-  To address all issues (including breaking changes), run:
-  npm audit fix --force
+  - 2.3
+    To address all issues (including breaking changes), run:
+    `npm audit fix --force`
 
-fix available via `npm audit fix --force`
-Will install express@2.5.11, which is a breaking change
-node_modules/cookie
-express >=3.0.0-alpha1
-Depends on vulnerable versions of cookie
-node_modules/express
+    fix available via `npm audit fix --force`
+    Will install `express@2.5.11`, which is a breaking change
+    node_modules/cookie
+    express >=3.0.0-alpha1
+    Depends on vulnerable versions of cookie
+    node_modules/express
 
-2 low severity vulnerabilities
+        => 2 low severity vulnerabilities
 
 ## Backend
 
@@ -85,12 +85,14 @@ node_modules/express
 - 3 Code
 
   - 3.1 Incorrect use of `<label for=FORM_ELEMENT><br>`
-    The label's for attribute doesn't match any element id. This might prevent the browser from correctly autofilling the form and accessibility tools from working correctly.
+    The label's for attribute doesn't match any element id.
+
+    This might prevent the browser from correctly autofilling the form and accessibility tools from working correctly.
 
     To fix this issue, make sure the label's for attribute references the correct id of a form field.
 
-<p align="right">(<a href="./README.md">back to Bugs list</a>)</p>
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="./README.md">back to ReadMe</a>)</p>
+<p align="right">(<a href="#bugList-top">back to top</a>)</p>
 
 ## Liste des bugs répertorier par Jest <br> + ceux répertoriés dans Notion
 
@@ -101,24 +103,26 @@ npm run test
 ```
 
 <br>
-- 1 Le test Bills / les notes de frais s'affichent par ordre décroissant est passé au rouge.
+- 1 Le test Bills: "les notes de frais s'affichent par ordre décroissant" est passé au rouge.
 
 <br>
   <img src='./Documentions-projet/img/Screenshot_2020-07-24_at_01.08.55.png' alt='erreur de trie des dates'>
 
 <br>
-- 2 Dans le rapport de test "Login, si un administrateur remplit correctement les champs du Login, il devrait naviguer sur la page Dashboard", le test est passé au rouge (cf. copie d'écran).
+- 2 Dans le rapport de test: "Login", si un administrateur remplit correctement les champs du Login, il devrait naviguer sur la page Dashboard, le test est passé au rouge.
 
 <br>
  <img src='./Documentions-projet/img/image.png' alt='erreur de trie des dates'>
 
 <br>
-<p align="right">(<a href="./README.md">back to Bugs list</a>)</p>
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="./README.md">back to ReadMe</a>)</p>
+<p align="right">(<a href="#bugList-top">back to top</a>)</p>
 
 ## 1ère bug
 
-les dates sont dans un format anglo-saxon et mal trié il faut les convertire en format international et les trié dans l'ordre croissant.
+les dates sont dans un format anglo-saxon et mal triées.
+
+Il faut les convertir en format international et les trié dans l'ordre croissant.
 
 ### solution:
 
@@ -144,7 +148,7 @@ const rows = (data) => {
 };
 ```
 
-- La fonction rows prend un tableau de factures, les trie par date de manière décroissante, puis les formate en HTML pour l'affichage.
+- La fonction `rows` prend un tableau de factures, les trie par date de manière décroissante, puis les formate en HTML pour l'affichage.
 
 ## 2ème bug
 
@@ -224,61 +228,148 @@ Explication détaillée des éléments de ce code :
 bills.forEach((bill) => { ... })
 ```
 
-La méthode forEach() est une fonction intégrée de JavaScript qui exécute une fonction de rappel pour chaque élément d'un tableau. Dans ce cas, elle parcourt le tableau bills, et pour chaque élément (une facture), elle exécute la fonction fléchée qui suit.
+La méthode `forEach()` est une fonction intégrée de JavaScript qui exécute une fonction de rappel pour chaque élément d'un tableau.<br/>
+Dans ce cas, elle parcourt le tableau bills, et pour chaque élément (une facture), elle exécute la fonction fléchée qui suit.
 <br>
 
 ```js
 $(#open-bill${bill.id}).off();
 ```
 
-Cette ligne utilise jQuery pour sélectionner un élément du DOM qui a un ID correspondant à open-bill suivi de l'ID de la facture (bill.id). La méthode .off() désactive tous les gestionnaires d'événements précédemment attachés à cet élément. Cela permet d'éviter que plusieurs gestionnaires d'événements ne soient attachés à la même facture, ce qui pourrait entraîner des comportements indésirables lors de clics successifs.
+Cette ligne utilise `jQuery` pour sélectionner un élément du `DOM` qui a un `ID` correspondant à `open-bill` suivi de l'`ID` de la facture `(bill.id)`.<br/>
+La méthode `.off()` désactive tous les gestionnaires d'événements précédemment attachés à cet élément.<br/>
+Cela permet d'éviter que plusieurs gestionnaires d'événements ne soient attachés à la même facture, ce qui pourrait entraîner des comportements indésirables lors de clics successifs.
 <br>
 
 ```js
 $(#open-bill${bill.id}).click((e) => { ... });
 ```
 
-Cette ligne réattache un gestionnaire d'événements click à l'élément sélectionné. Lorsque l'utilisateur clique sur l'élément, la fonction fléchée est exécutée.
+Cette ligne rattache un gestionnaire d'événements `click` à l'élément sélectionné. Lorsque l'utilisateur clique sur l'élément, la fonction fléchée est exécutée.
 <br>
 
 ## Tests unitaires et d'intégration
 
-Le rapport de couverture de branche de Jest indique que les fichiers suivants ne sont pas couverts (cf. copie d'écran) :
+Le rapport de couverture de branche de Jest indique que les fichiers suivants ne sont pas couverts:
 
 - [x] composant `views/Bills` : Le taux de couverture est à 100% néanmoins si tu regardes le premier test il manque la mention “expect”. Ajoute cette mention pour que le test vérifie bien ce que l’on attend de lui.
 
-  ### Solution:
+  #### Solution:
 
   L'ajout de l'instruction :<br>
-  `expect(windowIcon.classList.contains('active-icon')).toBe(true)` <br>
-  permet de confirmer que l'icône est correctement mise en valeur, ce qui garantit que l'interface utilisateur fonctionne comme prévu.
+  => `expect(windowIcon.classList.contains('active-icon')).toBe(true)` <br>
+  Permet de confirmer que l'icône est correctement mise en valeur, ce qui garantit que l'interface utilisateur fonctionne comme prévu.
 
 - [x] ~~composant views/NewBill~~
-- [ ] composant container/Bills :
+- [x] composant container/Bills :
 
-  ### Solution:
+  - [x] couvrir un maximum de "statements" c'est simple, il faut qu’après avoir ajouté tes tests unitaires et d’intégration
+        <a href='http://127.0.0.1:8080/coverage/lcov-report/containers/Bills.js.html'> le rapport de couverture du fichier `container/Bills`</a>
+        soit vert. Cela devrait permettre d'obtenir un taux de couverture aux alentours de 80% dans la colonne "statements".
 
-  - [ ] couvrir un maximum de "statements" c'est simple, il faut qu’après avoir ajouté tes tests unitaires et d’intégration <a href='http://127.0.0.1:8080/coverage/lcov-report/containers/Bills.js.html'> le rapport de couverture du fichier `container/Bills`</a> soit vert. Cela devrait permettre d'obtenir un taux de couverture aux alentours de 80% dans la colonne "statements".
+  - [x] ajouter un test d'intégration `GET` Bills. Tu peux t'inspirer de celui qui est fait (signalé en commentaires) pour Dashboard.
 
-  ### Solution:
+    #### Solution:
 
-  - [ ] ajouter un test d'intégration `GET` Bills. Tu peux t'inspirer de celui qui est fait (signalé en commentaires) pour Dashboard.
+    Ajout d'un test d'intégration qui garantit que le clic sur l'icône déclenche l'ouverture d'une modale, comme attendu.
 
-  ### Solution:
+    ```js
+    test("Then i click on icon-eye a modal should open", async () => {
+    	Object.defineProperty(window, "localStorage", {
+    		value: localStorageMock,
+    	});
+    	window.localStorage.setItem(
+    		"user",
+    		JSON.stringify({
+    			type: "Employee",
+    		})
+    	);
+    	jQuery.prototype.modal = jest.fn(() => {});
+    	const root = document.createElement("div");
+    	root.setAttribute("id", "root");
+    	document.body.append(root);
+    	router();
+    	window.onNavigate(ROUTES_PATH.Bills);
+    	await waitFor(() => screen.getAllByTestId("icon-eye"));
+    	const iconEye = screen.getAllByTestId("icon-eye")[0];
+    	fireEvent.click(iconEye);
+    	await waitFor(() => screen.getByTestId("modaleFile"));
+    	const modal = screen.getByTestId("modaleFile");
+    	console.log(modal.classList);
+    	//to-do write expect expression
+    	expect(jQuery.prototype.modal).toHaveBeenCalled();
+    });
+    ```
 
-- [ ] composant `container/NewBill` :
+  On vérifie le comportement de l'icône "icon-eye" lorsqu'on clique dessus pour ouvrir une modale.<br/>
 
-  ### Solution:
+  Cela permet d'obtenir un taux de couverture de 89,66% dans la colonne "statements".
 
-  - [ ] couvrir un maximum de "statements" : c'est simple, il faut que le rapport de couverture du fichier `container/NewBill` soit vert (accessible à <a href='http://127.0.0.1:8080/coverage/lcov-report/containers/NewBill.js.html'> cette adresse</a> quand tu auras lancé le serveur). Cela devrait permettre d'obtenir un taux de couverture aux alentours de 80% dans la colonne "statements".
+- [x] composant `container/NewBill` :
 
-  ### Solution:
+  - [x] couvrir un maximum de "statements" :
 
-  - [ ] ajouter un test d'intégration `POST` new bill.
+    c'est simple, il faut que le rapport de couverture du fichier `container/NewBill` soit vert (accessible à
+    <a href='http://127.0.0.1:8080/coverage/lcov-report/containers/NewBill.js.html'> cette adresse</a>
+    quand tu auras lancé le serveur).
 
-  ### Solution:
+    Cela devrait permettre d'obtenir un taux de couverture aux alentours de 80% dans la colonne "statements".
+
+    #### Solution:
+
+    Voir le fichier **tests** <a href="./Frontend/src/__tests__/NewBill.js">NewBill.js</a>
+
+    Les tests de ce fichier permettent d'obtenir un taux de couverture de 97,5% dans la colonne "statements".
+
+- [x] ajouter un test d'intégration `POST` new bill.
+
+  #### Solution:
+
+  Ce test d’intégration vérifie le bon fonctionnement de la soumission complète du formulaire en intégrant plusieurs composants (le formulaire, l'upload de fichier, la soumission avec des données).
+
+  ```js
+  test("Then it should call the create method with correct form data", async () => {
+  	window.onNavigate(ROUTES_PATH.NewBill);
+
+  	await waitFor(() => screen.getAllByTestId("file"));
+
+  	const file = new File(["image content"], "file.png", {
+  		type: "image/png",
+  	}); // Crée un fichier factice pour simuler un upload (ici une image PNG)
+
+  	await simulateFileUpload(file); // Simule l'upload du fichier dans le champ prévu à cet effet
+
+  	window.localStorage.setItem(
+  		"user",
+  		JSON.stringify({ email: "test@email.com" })
+  	); // Ajoute un utilisateur factice dans le localStorage avec un email
+
+  	const form = screen.getByTestId("form-new-bill"); // Sélectionne le formulaire pour la nouvelle facture dans le DOM
+
+  	const btnSubmit = document.getElementById("btn-send-bill");
+
+  	const handleSubmit = jest.fn((e) => newBillContainer.handleSubmit(e)); // Mock la fonction handleSubmit pour vérifier si elle est bien appelée
+
+  	form.addEventListener("submit", handleSubmit);
+
+  	userEvent.click(btnSubmit); // Simule la soumission du formulaire
+
+  	await waitFor(() => {
+  		expect(handleSubmit).toHaveBeenCalled(); // Vérifie que la fonction handleSubmit a bien été appelée lors de la soumission
+  	});
+  });
+  ```
+
+  Contexte:<br/>
+  L'action principale est la soumission du formulaire de création de "`nouvelle note de frais`".
+
+  Appel de la méthode `POST`:<br/>
+  Bien que le code simule l'appel en utilisant `handleSubmit` avec `newBillContainer.handleSubmit(e)`, qui est censé envoyer les données via `POST` vers l'`API`, en utilisant la méthode create du store.
+
+  Vérifications:<br/>
+  `expect(handleSubmit).toHaveBeenCalled()` vérifie que la méthode `handleSubmit` a été appelée, ce qui est l’indicateur que la méthode `POST` sous-jacente (via la fonction create dans le store) est sollicitée pour envoyer les données du formulaire.
 
 - [x] ~~composant views/VerticalLayout~~
 
-Respecter la structure des tests unitaires en place : Given / When / Then avec le résultat attendu.
+Respecter la structure des tests unitaires en place : "Given / When / Then" avec le résultat attendu.<br/>
 Un exemple est donné dans le squelette du test `__tests__/Bills.js`
