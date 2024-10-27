@@ -7,9 +7,9 @@
 <br />
 <div align="center">
   <h1>Billed</h1>
-  <a href="https://github.com/Erik-42">
-    <img src="./frontend/src/assets/images/logo/logo-billed.png" alt="Logo Billed" width="250">
-  </a>
+
+![logo-Billed][logo-Billed]
+
 </div>
 <p></p>
 
@@ -31,10 +31,10 @@
 
 <div align="center">
 
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Issues][issues-shield]][issues-url]
-[![wakatime](https://wakatime.com/badge/github/Erik-42/openclassroom-projet_09-billed.svg)](https://wakatime.com/badge/github/Erik-42/openclassroom-projet_09-billed)
+[![contributors-shield]][contributors-url]
+[![forks-shield]][forks-url]
+[![issues-shield]][issues-url]
+[![wakatime-shield-repo]][wakatime-repo]
 
 </div>
 
@@ -52,22 +52,25 @@ L’essentiel a déjà été développé:
 Le back-end des deux parcours est prêt en version alpha.
 
 Côté front-end :
-↳ Parcours administrateur : il a été testé, il faut désormais le débugger.
+↳ Parcours administrateur : il a été testé, il faut désormais le debugger.
 
-↳ Parcours employé : il faut entièrement le tester et le débugger.
+↳ Parcours employé : il faut entièrement le tester et le debugger.
 
 Chrome Debugger à déjà été utiliser, il faudra continuer avec cet outil.
 
 ## Built with
 
 <p> </p>
+
+<div>
 <a href=https://github.com/Erik-42?tab=repositories&q=&type=&language=html&sort= > <img width ='32px' height='32px' src ='https://raw.githubusercontent.com/rahulbanerjee26/githubAboutMeGenerator/main/icons/html.svg'> </a>
 <a href=https://github.com/Erik-42?tab=repositories&q=&type=&language=css&sort= > <img width ='32px' height='32px' src ='https://raw.githubusercontent.com/rahulbanerjee26/githubAboutMeGenerator/main/icons/css.svg'> </a>
-<a href= https://github.com/Erik-42?tab=repositories&q=&type=&language=sass&sort= > <img width ='32px' height='32px' src ='https://raw.githubusercontent.com/rahulbanerjee26/githubAboutMeGenerator/main/icons/sass.svg'> </a>
 <a href=https://github.com/Erik-42?tab=repositories&q=&type=&language=javascript&sort= > <img width ='32px' height='32px' src ='https://raw.githubusercontent.com/rahulbanerjee26/githubAboutMeGenerator/main/icons/javascript.svg'> </a>
 <a href=https://github.com/Erik-42?tab=repositories&q=&type=&language=reactjs&sort= > <img width ='32px' height='32px' src ='https://raw.githubusercontent.com/rahulbanerjee26/githubAboutMeGenerator/main/icons/reactjs.svg'> </a>
+<a href=https://github.com/Erik-42?tab=repositories&q=&type=&language=reactjs&sort= > <img width ='32px' height='32px' src ='https://raw.githubusercontent.com/rahulbanerjee26/githubAboutMeGenerator/main/icons/redux.svg'> </a>
 <a href=https://github.com/Erik-42?tab=repositories&q=&type=&language=reactjs&sort= > <img width ='32px' height='32px' src ='https://raw.githubusercontent.com/rahulbanerjee26/githubAboutMeGenerator/main/icons/jest.svg'> </a>
 <a href= https://github.com/Erik-42?tab=repositories&q=&type=&language=github&sort= > <img width ='32px' height='32px' src ='https://raw.githubusercontent.com/rahulbanerjee26/githubAboutMeGenerator/main/icons/github.svg'> </a>
+</div>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -206,13 +209,13 @@ Formation OpenClassRoom Développeur d'application - JavaScript React
 
 <div align="center">
 
-[![GitHub followers][github followers-shield]][github followers-url]
-[![Stargazers][stars-shield]][stars-url]
-[![GitHub repo][github repo-shield]][github repo-url]
-[![wakatime](https://wakatime.com/badge/user/f84d00d8-fee3-4ca3-803d-3daa3c7053a5.svg)](https://wakatime.com/@f84d00d8-fee3-4ca3-803d-3daa3c7053a5)
+[![github followers-shield]][github followers-url]
+[![stars-shield]][stars-url]
+[![github repo-shield]][github repo-url]
+[![wakatime-shield-user]][wakatime-user]
 
-[![Github Badge][github badge-shield]][github badge-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
+[![github badge-shield]][github badge-url]
+[![linkedin-shield]][linkedin-url]
 
 <a href = 'https://basillecorp.dev'> <img width = '32px' align= 'center' src="https://raw.githubusercontent.com/rahulbanerjee26/githubAboutMeGenerator/main/icons/portfolio.png"/> basillecorp.dev</a>
 
@@ -226,8 +229,11 @@ mesen.erik@gmail.com
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
 [product-screenshot]: ./images/screenshot.png
-[wakatime-shield]: https://wakatime.com/badge/user/f84d00d8-fee3-4ca3-803d-3daa3c7053a5.svg
-[wakatime-url]: https://wakatime.com/@f84d00d8-fee3-4ca3-803d-3daa3c7053a5
+[logo-Billed]: ./Frontend/src/assets/images/logo/logo-billed.png
+[wakatime-shield-repo]: https://wakatime.com/badge/github/Erik-42/openclassroom-projet_09-billed.svg
+[wakatime-repo]: https://wakatime.com/badge/github/Erik-42/openclassroom-projet_09-billed
+[wakatime-shield-user]: https://wakatime.com/badge/user/f84d00d8-fee3-4ca3-803d-3daa3c7053a5.svg
+[wakatime-user]: https://wakatime.com/@f84d00d8-fee3-4ca3-803d-3daa3c7053a5
 [github badge-shield]: https://img.shields.io/badge/Github-Erik--42-155?style=for-the-badge&logo=github
 [github badge-url]: https://github.com/Erik-42
 [github repo-shield]: https://img.shields.io/badge/Repositories-48-blue
